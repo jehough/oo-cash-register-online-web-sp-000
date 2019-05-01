@@ -23,5 +23,7 @@ class CashRegister
     end
   end
   def void_last_transaction
+    @total -= (@last_transaction[:price]*@last_transaction[:quantity])
+  end
 
 end
